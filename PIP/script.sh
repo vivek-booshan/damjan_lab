@@ -19,21 +19,13 @@
 # exit
 # EOF
 
+## Prints 13 ##
+
+###############################################
+
 vmd -dispdev text -e load_membrane.tcl << EOF
 source velocities.tcl
 exit
 EOF
 
-# vmd -e velocity.vmdin -dispdev text
-# set ion "resname POT"
-# set ion_selection [atomselect top "resname POT"]
-# set outfile [open "xvelocity_resname_POT.dat" w]
-# set coord "x"
-
-# for {set frame 0} {\$frame <= 100} {incr frame} {
-
-#     animate goto \$frame
-#     set current_coords [\$ion_selection get \$coord]
-#     puts \$outfile \$current_coords
-# }
-# exit
+##################################################
