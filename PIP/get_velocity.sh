@@ -9,7 +9,7 @@ TOPFile="step5_input.parm7"
 vmd << EOF
 
 source load_membrane.tcl
-
+source velocities.tcl
 EOF
 
 

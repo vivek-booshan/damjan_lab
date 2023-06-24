@@ -2,7 +2,7 @@ proc get_trajectory {} {
     set cwd [file dirname [info script]]
     set nc_count [llength [glob [file join $cwd nc eq.*.nc]]]
     for {set i 1} {$i <= $nc_count} {incr i} {
-        mol addfile [file join $cwd nc eq.$i.nc]
+        mol addfile [file join $cwd nc eq.$i.nc] first 0 last -1 waitfor all
     }
 }
 
