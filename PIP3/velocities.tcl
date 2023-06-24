@@ -1,4 +1,4 @@
-set field [lindex $argv 0]
+set field [lindex $argv 2]
 
 source load_membrane.tcl
 

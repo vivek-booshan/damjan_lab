@@ -1,7 +1,7 @@
 proc get_trajectory {} {
     set nc_count [llength [glob eq.$i.nc]]
     for {set i 1} {$i <= $nc_count} {incr i} {
-        mol addfile eq.$i.nc
+        mol addfile eq.$i.nc first 0 last -1 waitfor all
     }
 }
 
