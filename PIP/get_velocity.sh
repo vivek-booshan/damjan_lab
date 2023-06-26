@@ -9,6 +9,7 @@ vmd << EOF
 
 source load_membrane.tcl
 source velocities.tcl
+
 EOF
 
 
