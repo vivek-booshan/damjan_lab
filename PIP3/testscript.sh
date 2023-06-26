@@ -1,11 +1,12 @@
 #!bin/bash
 
-vmd -args source test.tcl efx << EOF
-exit
-EOF
-vmd -args source test.tcl efy << EOF
-exit
-EOF
-vmd -args source test.tcl efz << EOF
-exit
+ml vmd
+
+echo "Hello World"
+
+vmd -dispdev text << EOF
+set sum 0
+for {set i 0} {$i < 100} {incr i} {
+  set sum [expr $i + 1]
+}
 EOF

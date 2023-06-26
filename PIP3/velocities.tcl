@@ -13,8 +13,8 @@ set coord "x"
 
 set name [join $ion "_"]
 set outfile [open "${field}_${coord}velocity_${name}.dat" w]
-unset name
-unset field
+# unset name
+# unset field
 
 for {set frame 0} {$frame <= $numframes} {incr frame} {
 
