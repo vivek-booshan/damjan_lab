@@ -1,6 +1,6 @@
 set field [lindex $argv 2]
 
-source load_membrane.tcl
+# source load_membrane.tcl
 
 set timestep [llength [glob eq.*.nc]]
 
